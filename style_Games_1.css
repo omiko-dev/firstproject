@@ -1,0 +1,756 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+
+body
+{
+    background-color: #F6F4F0;
+    animation: page 1s;
+}
+@keyframes page 
+{
+    from
+    {
+        opacity: 0;
+    }    
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+nav
+{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: min;
+    color: #fff;
+    animation-name: nav;
+    animation-duration: 2.5s;
+    z-index: 2;
+}
+
+
+@keyframes nav{
+    from{top:-80px}
+
+    to{top: 0;}
+}
+
+
+.nav_1
+{
+    width: 166px;
+    height: 52px;
+    background-color: #DA392B;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 100px;
+}
+
+.title
+{
+    font-weight: 100;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav_2
+{
+    margin-right: 100px;
+}
+
+.nav_2 ul
+{
+    position: relative;
+    display: inline-flex;
+}
+
+#nav_2_li
+{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: 0px 20px 20px -28px #DA392B;
+    cursor: pointer;
+}
+
+#nav_2_li1
+{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: 0px 20px 20px -28px #DA392B;
+    cursor: default;
+}
+
+
+.nav_2 ul li a
+{
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;
+}
+
+.left_border
+{
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'roboto', sans-serif;
+    transition: ease 0.8s;
+    cursor: pointer;
+}
+
+.left_border:hover
+{
+    color: #fff;
+    background-color: #DA392B;
+}
+
+.right_border
+{
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    color: #000; 
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    cursor: pointer;
+}
+
+.right_border:hover
+{
+    background-color: #DA392B;
+    transition: 0.8s;
+}
+
+
+
+.right_border:hover
+{
+    color: #fff;
+}
+
+
+.n1, .n2
+{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+}
+
+.n1:hover
+{
+    background-color: #DA392B;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.n2 a, .n1 a
+{
+    color: #000;
+}
+
+.n1:hover a
+{
+    color: #fff;
+}
+
+
+#Carrers
+{
+    cursor: default;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: 0px 20px 20px -28px #DA392B;
+    cursor: pointer;
+}
+
+.n2 .n1_menu
+{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    top: 65px; 
+    right: 301px; 
+    width: 100px; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    opacity: 0;
+    transition:opacity ease 0.8s;
+}
+
+#menu
+{
+    display: block;   
+    padding-block: 4.5px;
+    cursor: pointer;
+}
+
+#menu:hover
+{
+    background-color: #DA392B;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu_top
+{
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    background-color: #DA392B;
+    color: #fff;
+}
+
+.menu_bottom
+{
+    border-end-end-radius: 10px;   
+    border-end-start-radius: 10px;
+}
+
+.n2:hover .n1_menu
+{ 
+    display: block;
+    opacity: 1;
+}
+/* --------------------------------- *//* --------------------------------- */
+
+
+.empty_1
+{
+    width: 100%;
+    height: 250px;
+}
+
+
+/* --------------------------------- *//* --------------------------------- */
+
+
+.stage_1
+{
+    background-image: url(./background_img/Games_1_1_bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 650px;
+    width: 100%;
+    position: relative;
+}
+
+.Kipon
+{
+    position: absolute;
+    width: 672px;
+    height: 615px;
+    background-color: #fff;
+    box-shadow: 7px 12px 20px -17px #c9191c;
+    border-radius: 20px;
+    top: -150px;
+    left: 100px;
+}
+
+
+.Kipon_card .card_up
+{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px;
+    padding-bottom: 40px;
+}
+
+.Kipon_card .card_up img
+{
+    border: 7px solid #fff;
+    border-radius: 33px;
+    box-shadow: 7px 12px 20px -17px #c9191c
+}
+
+.Kipon_card .card_up .card_name 
+{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.Kipon_card .card_up .card_name a
+{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Kipon_card .card_up .card_name p
+{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.card_txt1
+{
+    padding-left: 50px;
+}
+
+.card_txt1 h1
+{
+    font-family: 'Suez One', serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #272443;
+}
+
+.card_txt1 p
+{
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --------------------------------- *//* --------------------------------- */
+
+
+.stage_2
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.stage_2 h1
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 100px;
+    padding-bottom: 50px;
+    font-size: 34px;
+}
+
+.stage_2 .stage_2_img
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.img_in
+{
+    background-image: url(./cards_bg/Games_1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform ease 1s;
+}
+
+
+.st2_img
+{
+    width: 827px;
+    height: 465px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 4px 3px 40px -20px #da392b;
+}
+
+.st2_img:hover .img_in
+{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+
+.img_in1
+{
+    background-image: url(./cards_bg/Games_1_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform ease 1s;
+}
+
+.st2_img:hover .img_in1
+{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+/* --------------------------------- *//* --------------------------------- */
+
+
+.stage_3
+{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stage_3 .Rating
+{
+    margin-left: 100px;
+    width: 250px;
+    height: 101px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 7px 7px 50px -30px #da392b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage_3 .Rating .Rating_in
+{
+    width: 178px;
+    height: 42px;
+    border-radius: 30px;
+    background-color: #DA392B;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.stage_3 .Rating .Rating_in .star
+{
+    position: absolute;
+    left: 13px;
+}
+
+.star i
+{
+    color: #fff;
+}
+
+.stage_3 .Rating .Rating_in .Finnal_Rating
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 30px;
+    right: 3px;
+}
+
+.Finnal_Rating p
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.stage_3 .Reviews
+{
+    margin-left: 60px;
+}
+
+.stage_3 .Reviews h1
+{
+    font-family: 'Suez One', serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #272443;
+}
+
+/* --------------------------------- *//* --------------------------------- */
+
+
+.stage_4
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage_4 .stage_4in
+{
+    border: 1px solid #000;
+    width: 100%;
+    height: 357px;
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.stage_4txt, .stage_4txt1
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stage_4txt p, .stage_4txt1 p
+{
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stage_4txt h2, .stage_4txt1 h2
+{
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+
+.stage_4txt1
+{
+    border-inline: 1px solid #000;
+}
+
+/* --------------------------------- *//* --------------------------------- */
+
+.stage_5
+{
+    background-image: url(.//background_img/Games_1_2_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 735px;
+}
+
+.stage_5in
+{
+    width: 100%;
+    height: 100%;
+    background-color: #DA392Ba6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage_5 .stage_5in .stage_5txt
+{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+
+.stage_5 .stage_5in .stage_5txt h1
+{
+    font-family: 'Suez One', serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.stage_5 .stage_5in .stage_5txt p
+{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 20px;
+    line-height: 1.5em;
+}
+/* --------------------------------- *//* --------------------------------- */
+
+.stage_6
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.stage_6in
+{
+    background-color: #fff;
+    width: 568px;
+    height: 221px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 20px -20px #c9191c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stage_6 .stage_6in h1
+{
+    font-size: 50px;
+    font-family: 'Suez One', serif;
+    color: #272443;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+.Download
+{
+    display: flex;
+    gap: 20px;
+}
+/* -------------------------------- *//* -------------------------------- */
+
+
+.last_logo1
+{
+    width: 166px;
+    height: 52px;
+    background-color: #DA392B;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer .last_logo
+{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_name
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_name a
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+footer .help_stage
+{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+footer .help_stage .help_stagein
+{
+    width: 70%;
+    border-block: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+footer .help_stage .help_stagein .help_stage1
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
+.help_stagein .help_stage1 ul
+{
+    margin-top: 40px;
+}
+
+.help_stagein .help_stage1 ul li 
+{
+    display: block;
+
+}
+
+.help_stagein .help_stage1 ul li a
+{
+    text-decoration: none;
+    color: #757575;
+
+}
+
+
+#main
+{
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#common
+{
+    color: #757575;
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.up_6
+{
+    margin-top: 30px;
+}
+
+.final_stage
+{
+    width: 100%;
+    height: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final_stage a 
+{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    text-decoration: none;
+}
+
+
+/* 'Roboto', sans-serif */
+/* 'Suez One', serif */
