@@ -1,0 +1,1154 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+
+body
+{
+    background-color: #F6F4F0;
+    animation: page 1s;
+}
+@keyframes page 
+{
+    from
+    {
+        opacity: 0;
+    }    
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+nav
+{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: min;
+    color: #fff;
+    animation-name: nav;
+    animation-duration: 2.5s;
+    z-index: 2;
+}
+
+
+@keyframes nav{
+    from{top:-80px}
+
+    to{top: 0;}
+}
+
+
+.nav_1
+{
+    width: 166px;
+    height: 52px;
+    background-color: #DA392B;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 100px;
+}
+
+.title
+{
+    font-weight: 100;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav_2
+{
+    margin-right: 100px;
+}
+
+.nav_2 ul
+{
+    position: relative;
+    display: inline-flex;
+}
+
+#nav_2_li
+{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: 0px 20px 20px -28px #DA392B;
+    cursor: pointer;
+}
+
+#nav_2_li1
+{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: 0px 20px 20px -28px #DA392B;
+    cursor: default;
+}
+
+
+.nav_2 ul li a
+{
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;
+}
+
+.left_border
+{
+    border-bottom-left-radius: 10px;
+    background-color: #DA392B;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.left_border:hover
+{
+    color: #fff;
+}
+
+.right_border
+{
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    color: #000; 
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    cursor: pointer;
+}
+
+.right_border:hover
+{
+    background-color: #DA392B;
+    transition: 0.8s;
+}
+
+
+
+.right_border:hover
+{
+    color: #fff;
+}
+
+
+.n1, .n2
+{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+}
+
+.n1:hover
+{
+    background-color: #DA392B;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.n2 a, .n1 a
+{
+    color: #000;
+}
+
+.n1:hover a
+{
+    color: #fff;
+}
+
+
+#Carrers
+{
+    cursor: default;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 25px;
+    box-shadow: 0px 20px 20px -28px #DA392B;
+    cursor: pointer;
+}
+
+.n2 .n1_menu
+{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    top: 65px; 
+    right: 301px; 
+    width: 100px; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    opacity: 0;
+    transition:opacity ease 0.8s;
+}
+
+#menu
+{
+    display: block;   
+    padding-block: 4.5px;
+    cursor: pointer;
+}
+
+#menu:hover
+{
+    background-color: #DA392B;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu_top
+{
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.menu_bottom
+{
+    border-end-end-radius: 10px;   
+    border-end-start-radius: 10px;
+}
+
+.n2:hover .n1_menu
+{ 
+    display: block;
+    opacity: 1;
+}
+
+/* --------------------------------- *//* --------------------------------- */
+
+
+.empty_1
+{
+    width: 100%;
+    height: 250px;
+} 
+
+/* -------------------------------- */
+
+
+.stage_1
+{
+    background-image: url(./background_img/bg1_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;    
+    color: #272443;
+    z-index: -2;
+}
+
+
+.stage_1in
+{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+.stage_1 .stage_1in h1
+{
+
+    font-weight: 400;
+    font-family: 'Suez One', serif;
+    font-size: 80px;
+}
+
+.stage_1 .stage_1in a
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.stage_1icon
+{
+    margin-top: 40px;
+}
+
+
+/* -------------------------------- *//* -------------------------------- */
+
+
+
+
+.cards
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 645px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 0;
+}
+
+#card_in
+{
+    width: 396px;
+    height: 527px;
+    border-radius: 20px;
+    margin-inline: 20px;
+}
+
+.card_zoom
+{
+    width: 396px;
+    height: 527px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-inline: 20px;
+    cursor: pointer;
+}
+
+
+.card_1
+{
+    background: url(./cards_bg/card_1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;    
+    border-radius: 20px;
+    transition: transform ease 0.7s;
+}
+
+.card_1:hover{
+    transform: scale(1.08);
+    border-radius: 20px;
+}
+
+.card_2
+{
+    background: url(./cards_bg/card_2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;    
+    border-radius: 20px;
+    transition: transform ease 0.7s;
+}
+
+.card_2:hover{
+    transform: scale(1.08);
+    border-radius: 20px;
+}
+
+.card_3
+{
+    background: url(./cards_bg/card_3.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 100%;    
+    border-radius: 20px;
+    transition: transform ease 0.7s;
+}
+
+.card_3:hover{
+    transform: scale(1.08);
+    border-radius: 20px;
+}
+
+.card_4
+{
+    background-color: #DA392B;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card_text1
+{
+    margin-left: 40px;
+    margin-bottom: 65px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_bg
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #ff00008a, #ffffff00);
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    transition: opacity ease 0.3s;
+}
+
+.card_bg:hover
+{    
+    opacity: 0;  
+}
+
+
+.card_bg2
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #f15b5b, #ffff70);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #642C3B;
+    transition: transform ease 1.11s;
+}
+
+.card_bg2:hover
+{
+    transform: scale(1.08);
+    background-image: linear-gradient(to top, #fff583, #ffff70);
+    color: rgb(32, 31, 31);
+}
+
+
+.cr1
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.cr2
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* -------------------------------- *//* -------------------------------- */
+
+.empty
+{
+    height: 400px;
+    width: 100%;
+}
+
+/* -------------------------------- *//* -------------------------------- */
+
+.stage_2
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+}
+
+.stage_2 h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #272443;
+    font-size: 21px;
+    margin-top: 212px;
+}
+
+.stage_2 a
+{
+    font-family: 'Suez One', serif;
+    font-size: 50px;
+    color: #272443;
+    margin-top: 20px;
+}
+
+.stage_2 p
+{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-top: 19px;
+}
+
+.stage_2 button
+{
+    width: 143px;
+    height: 61px;
+    background-color: #DA392B;
+    border-radius: 10px;
+    border: none;
+    margin-top: 40px;
+    transition: background ease 0.3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.stage_2 button:hover
+{
+    border: 1px solid black;
+    background-color: white;
+    color: #000;
+}
+
+.stage_2 button:hover  a
+{
+    color: #000;
+}
+
+.stage_2 button a
+{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.people_img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition:  background ease 0.5s;
+}
+
+.people_img:hover
+{
+   background-color: #9d484060;
+
+}
+
+
+.people_bg
+{
+    position: absolute;    
+    top: 1868px;
+    border-radius: 20px;
+    background-image: url(./cards_bg/people..jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 689px;
+    height: 396px;
+    z-index: 0;
+}
+
+.stage_2 img
+{
+    width: 229px;
+    height: 246px;
+    position: absolute;
+    top: 2064px;
+    left: 520px;
+}
+
+
+/* -------------------------------- *//* -------------------------------- */
+
+
+.stage_3
+{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stage_3 h1
+{
+    font-family: 'Suez One', serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #272443;
+}
+
+.stage_3 a
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #000;
+    margin-top: 30px;
+}
+
+
+/* -------------------------------- *//* -------------------------------- */
+
+
+.stage_4
+{
+    width: 100%;
+    height: 1180px;
+    background-image: url(./background_img/stage_4bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+
+.card4_1
+{
+    width: 390px;
+    height: 389px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 3px 6px -3px #da392b8c;
+}
+
+.st_4_cards
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.st_4_cards2
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 406px;
+}
+
+.card4_1 .card_up
+{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px;
+    padding-bottom: 40px;
+}
+
+.card4_1 .card_up img
+{
+    border: 7px solid #fff;
+    border-radius: 33px;
+    box-shadow: 7px 12px 20px -17px #c9191c
+}
+
+.card4_1 .card_up .card_name 
+{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.card4_1 .card_up .card_name a
+{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card4_1 .card_up .card_name p
+{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.card4_1 .card4_txt
+{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.55;
+    margin-left: 50px;
+}
+
+.download
+{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.download_1
+{
+    margin-right: 5px;
+}
+
+
+.soul
+{
+    width: 274px;
+    height: 300px;
+    margin-right: 337px;
+    margin-top: 50px;
+}
+
+#card4_1
+{
+    margin-left: 280px;
+}
+
+/* -------------------------------- *//* -------------------------------- */
+
+.empty_2
+{
+    height: 180px;
+    width: 100%;
+}
+
+/* -------------------------------- *//* -------------------------------- */
+
+.stage_5
+{
+    width: 100%;
+    height: 800px;
+    background-image: url(./background_img/stage_5bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.stage_5_1, .stage_5_2
+{
+    width: 100%;
+    height: 100%;
+}
+
+.stage_5_1
+{
+    display: flex;
+}
+
+.stage_5_1 .stage_5txt
+{
+    margin-top: 145px;
+    margin-left: 100px;
+}
+
+.stage_5_1 .stage_5txt h1
+{
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stage_5_1 .stage_5txt p
+{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Suez One', serif;
+    margin-block: 20px;
+    
+}
+
+.stage_5_1 .stage_5txt button
+{
+    width: 150px;
+    height: 60px;
+    background-color: #FCFF62;
+    border: none;
+    border-radius: 10px;
+    transition: background ease 0.5s;
+    cursor: pointer;
+}
+
+.stage_5_1 .stage_5txt button:hover
+{
+    background-color: #fff;
+}
+
+.stage_5_1 .stage_5txt button a
+{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+
+.stage_5_2
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+/* -------------------------------- *//* -------------------------------- */
+
+.stage_6
+{
+    width: 100%;
+    height: 600px;
+    background-image: url(./background_img/stage_6bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.stage_6bg
+{
+    width: 100%;
+    height: 100%;
+    background-color: #27244391;
+}
+
+.email_6
+{
+    position: absolute;
+    width: 388px;
+    height: 210px;
+    background-color: #DA392B;
+    border-radius: 20px;
+    top: 5010px;
+    right: 300px;
+}
+
+.email_6 h2
+{
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+
+.email_6 label
+{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
+    color: #fff;
+    margin-left: 25px;
+}
+
+.email_6 input
+{
+    width: 234px;
+    height: 58px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 8px;
+}
+
+.email_6 input:hover
+{
+    box-shadow: inset 0px 0px 0px 2.5px #000;
+}
+
+
+.email_6 button
+{
+    height: 58px;
+    width: 73px;
+    border-radius: 10px;
+    background-color: #FCFF62;
+    border: none;
+    transition: background ease 0.5s;
+    cursor: pointer;
+}
+
+.email_6 button:hover
+{
+    background-color: #fff;
+}
+
+.email_6 button a
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+/* -------------------------------- *//* -------------------------------- */
+
+
+.sign_in
+{
+    width: 438px;
+    height: 667px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 4533px;
+    left: 300px;
+}
+
+.sign_in .sign_in_txt
+{
+    margin-left: 43px;
+    padding-top: 40px;
+}
+
+.sign_in .sign_in_txt h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+}
+
+.sign_in .sign_in_txt p
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-top: 20px;
+}
+
+.sign_in .sign_in_txt .name_surname1
+{
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.sign_in .sign_in_txt .name_surname1 label
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0 20px 0 0;
+    margin-right: 72px;
+
+}
+
+
+.sign_in .sign_in_txt .name_surname2 input
+{
+    width: 143px;
+    height: 49px;
+    padding: 3px 3px 3px 15px;
+    border: 1.5px solid #000;
+    border-radius: 10px;    
+    margin-bottom: 30px;
+}
+
+.sign_in .sign_in_txt .name_surname2 input:hover
+{
+    box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+#first_name
+{
+    margin-right: 15px;
+}
+
+.sign_in .sign_in_txt label
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0 20px 0 0;
+}
+
+.sign_in .sign_in_txt input
+{
+    width: 330px;
+    height: 49px;
+    padding: 3px 3px 3px 15px;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
+#Email
+{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#Email:hover
+{
+    box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+#message
+{
+    margin-top: 15px;
+    height: 81px;
+}
+
+#message:hover
+{
+    box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+.sign_in button
+{
+    width: 350px;
+    height: 60px;
+    background-color: #272443;
+    border-radius: 10px;
+    margin-top: 22px;
+    border: none;
+    transition: background ease 0.3s;
+    cursor: pointer;
+}
+
+.sign_in button:hover
+{
+    background-color: #DA392B;
+}
+
+.sign_in button a
+{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* -------------------------------- *//* -------------------------------- */
+
+
+.last_logo1
+{
+    width: 166px;
+    height: 52px;
+    background-color: #DA392B;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer .last_logo
+{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_name
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_name a
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+footer .help_stage
+{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+footer .help_stage .help_stagein
+{
+    width: 70%;
+    border-block: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+footer .help_stage .help_stagein .help_stage1
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
+.help_stagein .help_stage1 ul
+{
+    margin-top: 40px;
+}
+
+.help_stagein .help_stage1 ul li 
+{
+    display: block;
+
+}
+
+.help_stagein .help_stage1 ul li a
+{
+    text-decoration: none;
+    color: #757575;
+
+}
+
+
+#main
+{
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#common
+{
+    color: #757575;
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.up_6
+{
+    margin-top: 30px;
+}
+
+.final_stage
+{
+    width: 100%;
+    height: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final_stage a 
+{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    text-decoration: none;
+}
+/* -------------------------------- *//* -------------------------------- */
+
+
+
+
+/* 'Roboto', sans-serif */
+/* 'Suez One', serif */
+
+
