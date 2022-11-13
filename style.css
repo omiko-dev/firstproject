@@ -845,6 +845,7 @@ nav
     font-family: 'Roboto', sans-serif; 
     color: #fff;
     margin-left: 25px;
+    padding: 2px;
 }
 
 .email_6 input
@@ -855,12 +856,14 @@ nav
     border-radius: 10px;
     outline: none;
     border: none;
+    padding-left: 10px;
     margin-left: 25px;
     margin-top: 25px;
-    margin-right: 8px;
+    margin-right: 18px;
+    font-size: 16px;
 }
 
-.email_6 input:hover
+.email_6 input:is(:hover, :focus)
 {
     box-shadow: inset 0px 0px 0px 2.5px #000;
 }
